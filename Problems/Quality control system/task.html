@@ -1,0 +1,48 @@
+<b>Quality control system</b> <a class=right href="https://hyperskill.org/learn/step/2587">Open on JetBrains Academy</a>
+<br><br>
+<html>
+ <head></head>
+ <body>
+  <p>You are asked to create quality control system in a company that produces and packs Bakery, the snippet of main classes follows:</p> 
+  <pre><code class="language-java">// These and its subclasses should pass quality check
+class Bakery {}
+
+class Cake extends Bakery {}
+
+// And this and other stuff should not
+class Paper {}
+
+// These boxes are used to pack stuff
+interface Box&lt;T&gt; {
+    void put(T item);
+    T get();
+}
+
+// Class you need to work on
+class QualityControl {
+  
+  public static boolean check(List&lt;Box&lt;? extends Bakery&gt;&gt; boxes) {
+      // Add implementation here
+  }
+  
+}</code></pre> 
+  <p>Implement check method in a way it would:</p> 
+  <ul> 
+   <li>Return true if all objects in all boxes belong to class Bakery or its subclasses or list contains no boxes</li> 
+   <li>Return false otherwise, including cases when Box is empty or List contains something that is not Box at all</li> 
+  </ul> 
+  <p>The method shouldn't throw any exceptions.</p> 
+  <p><button class="btn-sm btn-outline-secondary" onclick="getElementById('hint-968').style.display='inline'"> Hint </button> </p>
+  <div id="hint-968" style="display:none;">
+    You can use 
+   <strong>instanceof</strong> operator to examine that an object has a special type. For example, if you want to check a variable 
+   <code class="language-java">obj</code> is an instance of 
+   <code class="language-java">String</code> class use the following piece of code
+   <p></p> 
+   <p><code class="language-java">boolean isString = obj instanceof String</code></p> 
+   <p></p>
+  </div>
+  <p></p>
+ </body>
+</html><br><b>Sample Input:</b><br>QualityControl class<br><br><b>Sample Output:</b><br>Well done!<br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>
+<a href="https://hyperskill.org/learn/step/10088">Show topic summary</a>
