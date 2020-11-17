@@ -18,15 +18,15 @@ import java.util.Scanner;
 public class Model {
     public static  String authServ = "https://accounts.spotify.com";
     public static  String apiServ = "https://api.spotify.com";
-    public static  String id = "da072c60fcee469e8b0f4140aa4480d5";
-    public static  String secret = "8ada13093c704487b57c3a660448884e";
+    public static  String id = "";
+    public static  String secret = "";
     public static  String authoriz = "/authorize";
     public static  String response = "code";
     public static  String code = "";
     public static  String tok = "/api/token";
     public static  String grant = "authorization_code";
     public static  String redirect = "http://localhost:8080";
-    public static String access_token = "BQCUv9fBBSlA30Ed7fTNPm7sqyReT63qMLEMNDAi7TkHfb0T5bXEq5s2bLX0ljikZV9MXTYXnjgAsF-hXhYFBLEtJs-xeXNBeSfCDGfXu1JNawR-Vj_g7JgOpLTSBPYn3sWLK5Rt5CPUvqz_H_iJxoqsUGnPYNgr3w";
+    public static String access_token = "";
     public static void setAuthServer(String server){
         authServ = server;
     }
